@@ -44,7 +44,8 @@ def setup():
     print("Image files found:")
     for image_file in image_files:
         print(image_file)
-        imgs = None
+#        imgs = None
+        imgs = []
     return quotes, imgs
 
 quotes, imgs = setup()
