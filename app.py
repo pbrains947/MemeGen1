@@ -54,7 +54,10 @@ quotes, imgs = setup()
 def meme_rand():
     """Generate a random meme."""
 # Select a random image filename
-    random_image = random.choice(imgs)
+    try:
+        random_image = random.choice(imgs)
+    except IndexError:
+        pass
 
 # Select a random quote
     random_quote = random.choice(quotes)
